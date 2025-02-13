@@ -1,0 +1,20 @@
+RewriteEngine on
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type"
+</IfModule>
+
+RewriteRule ^views/chat/chat/([0-9]+)$ views/chat/chat.php?id=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+
+RewriteCond %{REQUEST_URI} \.(?:png|jpg|jpeg|gif|bmp|css|js|ico|svg)$ [NC]
+RewriteRule ^ - [L]
+
+RewriteBase /
+
+php_flag display_errors off

@@ -1,0 +1,36 @@
+/* Для аватара */
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Це робить аватар круглим */
+    object-fit: cover;  /* Зберігає пропорції зображення */
+    border: 2px solid #fff; /* Можна додати білу обвідку для контрасту */
+}
+
+/* Зміна кольору тексту кнопок в профілі */
+.profile-actions .btn {
+    color: black !important; /* Текст кнопки чорний */
+    background-color: #4CAF50; /* Основний фон кнопки */
+    border: none; /* Без обводки */
+}
+
+.profile-actions .btn:hover {
+    background-color: #45a049; /* Темніший відтінок на ховер */
+    color: white !important; /* Текст кнопки стає білим */
+}
+
+/* Додатковий стиль для кнопок всередині інших блоків */
+.profile-header .btn,
+.profile-info .btn,
+.profile-friends .btn {
+    color: black !important; /* Текст кнопки чорний */
+    background-color: #4CAF50; /* Основний фон кнопки */
+    border: none; /* Без обводки */
+}
+
+.profile-header .btn:hover,
+.profile-info .btn:hover,
+.profile-friends .btn:hover {
+    background-color: #45a049; /* Темніший відтінок на ховер */
+    color: white !important; /* Текст кнопки стає білим */
+}

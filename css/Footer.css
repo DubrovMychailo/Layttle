@@ -1,0 +1,20 @@
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #28a745;
+}
+.container
+{
+    a {
+        color: #555555 !important;
+        text-decoration: none !important
+    }
+
+    a:hover {
+        color: #555555 !important;
+    }
+
+}

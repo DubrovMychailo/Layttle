@@ -1,0 +1,38 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-dark-green {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-dark-green:hover {
+    background-color: #218838;
+    border-color: #218838;
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #343a40;
+}

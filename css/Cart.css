@@ -1,0 +1,18 @@
+.strike-through {
+    text-decoration: line-through;
+    color: black;
+}
+
+.sale-price {
+    color: red;
+}
+.btn-success {
+    color: #ffffff !important;
+}
+.container .btn-success {
+    color: #ffffff !important;
+}
+.btn-success:hover,
+.container .btn-success:hover {
+    color: #ffffff !important;
+}

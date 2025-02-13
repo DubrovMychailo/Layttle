@@ -1,0 +1,94 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 120px;
+}
+.dropdown {
+    padding-top: 10px;
+}
+.logo-img::after {
+    content: '';
+}
+.dropdown-menu a.dropdown-item:focus,
+.dropdown-menu a.dropdown-item:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+    color: black;
+}
+
+.dropdown-menu a.dropdown-item {
+    color: black;
+}
+
+#searchForm {
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+@media (max-width: 768px) {
+    header .d-flex {
+        padding: 5px 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .fw-bold.fs-3 {
+        font-size: 1.5rem;
+    }
+    .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .nav li {
+        margin-bottom: 5px;
+    }
+
+    .nav-link {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .rounded-circle, .logo-img {
+        width: 35px;
+        height: 35px;
+    }
+    .dropdown {
+        margin-top: -5px;
+    }
+
+    #searchForm {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: -14px;
+    }
+
+    #searchInput {
+        flex: 1;
+        margin-bottom: 0;
+        padding: 2px;
+        font-size: 0.9rem;
+        max-width: 150px;
+        margin-left: 5px;
+    }
+
+    #searchForm button {
+        padding: 2px 4px;
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+}
