@@ -1,0 +1,18 @@
+{
+    "name": "misha/layttle",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Misha\\Layttle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Михайло  Дубров",
+            "email": "ipz223_dmyu@student.ztu.edu.ua"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^3.8"
+    }
+}

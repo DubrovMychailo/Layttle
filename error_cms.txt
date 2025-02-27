@@ -133030,3 +133030,646 @@ Getting session variable: user = Array
     [photo] => 
     [email] => 
 )
+Session started or already active in Session constructorSession variable: user does not existSession started or already active in Session constructorSession variable: user does not existSession started or already active in Session constructorSession variable: user does not exist====== START LOGIN PROCESS ======
+SESSION після виконання login.php: Array
+(
+)
+
+Session variable: user does not exist====== START LOGIN PROCESS ======
+SESSION після виконання login.php: Array
+(
+)
+
+Session variable: user does not existSession started or already active in Session constructorSession variable: user does not existSet session variable: user = a:12:{s:2:"id";i:25;s:5:"login";s:7:"FonikMG";s:8:"password";s:7:"FonikMG";s:9:"firstname";s:7:"FonikMG";s:8:"lastname";s:7:"FonikMG";s:4:"role";s:4:"user";s:7:"address";s:0:"";s:5:"phone";s:0:"";s:4:"city";s:0:"";s:7:"country";s:0:"";s:5:"photo";N;s:5:"email";s:0:"";}Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+SQL: SELECT * FROM users WHERE login = :param0 | Params: Array
+(
+    [param0] => FonikMG
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+SQL: SELECT * FROM users WHERE login = :param0 | Params: Array
+(
+    [param0] => FonikMG
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Session started or already active in Session constructorSession variable: user does not existSession started or already active in Session constructorSession variable: user does not exist====== START LOGIN PROCESS ======
+SESSION після виконання login.php: Array
+(
+)
+
+Session variable: user does not exist====== START LOGIN PROCESS ======
+SESSION після виконання login.php: Array
+(
+)
+
+Session variable: user does not existSession started or already active in Session constructorSession variable: user does not existSet session variable: user = a:12:{s:2:"id";i:25;s:5:"login";s:7:"FonikMG";s:8:"password";s:7:"FonikMG";s:9:"firstname";s:7:"FonikMG";s:8:"lastname";s:7:"FonikMG";s:4:"role";s:4:"user";s:7:"address";s:0:"";s:5:"phone";s:0:"";s:4:"city";s:0:"";s:7:"country";s:0:"";s:5:"photo";N;s:5:"email";s:0:"";}Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Session started or already active in Session constructorGetting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
+Getting session variable: user = Array
+(
+    [id] => 25
+    [login] => FonikMG
+    [password] => FonikMG
+    [firstname] => FonikMG
+    [lastname] => FonikMG
+    [role] => user
+    [address] => 
+    [phone] => 
+    [city] => 
+    [country] => 
+    [photo] => 
+    [email] => 
+)
