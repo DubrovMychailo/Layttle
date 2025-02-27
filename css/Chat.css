@@ -89,3 +89,52 @@
 #chat-form button:hover {
     background: #5100b3;
 }
+#cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(70%);
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0);
+    font-size: 14px;
+    z-index: 9999;
+}
+
+#cookie-popup p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#cookie-popup a {
+    color: #a100ff;
+    text-decoration: underline;
+}
+
+#cookie-popup a:hover {
+    color: #8b0ff1;
+}
+
+#accept-cookies {
+    display: block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #7b00ff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#accept-cookies:hover {
+    background-color: #7405bc;
+}

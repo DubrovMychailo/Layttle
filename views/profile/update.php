@@ -1,10 +1,10 @@
 <?php
-include __DIR__ . '/../../controllers/ProfileEditController.php';
+include __DIR__ . '/../../controllers/ProfileController.php';
 
-use controllers\ProfileEditController;
+use controllers\ProfileController;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $controller = new ProfileEditController();
+    $controller = new ProfileController();
     $response = $controller->validateAndUpdateProfile($_POST, $_FILES);
 
     if ($response['success']) {

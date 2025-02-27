@@ -99,5 +99,4 @@ $currentPage = $_SERVER['REQUEST_URI'];
         </div>
         <?php endif; ?>
     </div>
-    </div>
 </header>

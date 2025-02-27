@@ -1,36 +1,70 @@
-/* Для аватара */
 .profile-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Це робить аватар круглим */
-    object-fit: cover;  /* Зберігає пропорції зображення */
-    border: 2px solid #fff; /* Можна додати білу обвідку для контрасту */
+    width: 120px !important;;
+    height: 120px !important;;
+    border-radius: 50% !important;;
+    object-fit: cover !important;;
+    border: 2px solid #fff !important;;
+}
+.edit-btn, .create-btn, .message-btn {
+    color: white !important;
+    all: unset;
+    background-color: #7e0cd5 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 8px 16px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    text-align: center !important;
+    transition: background-color 0.3s, box-shadow 0.3s !important;
 }
 
-/* Зміна кольору тексту кнопок в профілі */
-.profile-actions .btn {
-    color: black !important; /* Текст кнопки чорний */
-    background-color: #4CAF50; /* Основний фон кнопки */
-    border: none; /* Без обводки */
+.edit-btn:hover, .create-btn:hover, .message-btn:hover {
+    color: white !important;
+    all: unset;
+    background-color: #610ca6 !important;
+}
+#cookie-popup {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    max-width: 300px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.profile-actions .btn:hover {
-    background-color: #45a049; /* Темніший відтінок на ховер */
-    color: white !important; /* Текст кнопки стає білим */
+#cookie-popup a {
+    color: #42138c;
+    text-decoration: none;
+    font-weight: 600;
 }
 
-/* Додатковий стиль для кнопок всередині інших блоків */
-.profile-header .btn,
-.profile-info .btn,
-.profile-friends .btn {
-    color: black !important; /* Текст кнопки чорний */
-    background-color: #4CAF50; /* Основний фон кнопки */
-    border: none; /* Без обводки */
+#cookie-popup a:hover {
+    text-decoration: underline;
 }
 
-.profile-header .btn:hover,
-.profile-info .btn:hover,
-.profile-friends .btn:hover {
-    background-color: #45a049; /* Темніший відтінок на ховер */
-    color: white !important; /* Текст кнопки стає білим */
+#accept-cookies {
+    background: #6600ff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.2s ease-in-out;
 }
+
+#accept-cookies:hover {
+    background: #5609cf;
+}
+

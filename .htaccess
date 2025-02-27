@@ -16,5 +16,5 @@ RewriteCond %{REQUEST_URI} \.(?:png|jpg|jpeg|gif|bmp|css|js|ico|svg)$ [NC]
 RewriteRule ^ - [L]
 
 RewriteBase /
-
+AddDefaultCharset utf-8
 php_flag display_errors off

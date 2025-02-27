@@ -178,6 +178,17 @@ $messages = getMessages($pdo, $userId, $receiverId);
             }
         });
     });
+
+</script>
+<div id="cookie-popup">
+    <p>Цей сайт використовує файли cookie для покращення вашого досвіду. <a href="/privacy-policy.php">Дізнатися більше</a></p>
+    <button id="accept-cookies">Прийняти</button>
+</div>
+<script>
+    document.getElementById("accept-cookies").addEventListener("click", function () {
+        document.cookie = "cookieConsent=true; path=/; max-age=31536000";
+        document.getElementById("cookie-popup").style.display = "none";
+    });
 </script>
 </body>
 </html>
