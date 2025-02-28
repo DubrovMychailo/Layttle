@@ -7,9 +7,9 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-use core\AppConfig;
-use core\Session;
-use core\DB;
+use vendor\layttle\config\AppConfig;
+use vendor\layttle\core\Session;
+use vendor\layttle\core\DB;
 
 $session = new Session();
 require_once __DIR__ . '/../views/layouts/header.php';

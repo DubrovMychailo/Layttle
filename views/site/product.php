@@ -1,5 +1,5 @@
 <?php
-use models\Users;
+use vendor\layttle\models\Users;
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -25,8 +25,8 @@ if (isset($_SESSION['flash_message'])): ?>
 require_once __DIR__ . '/../../config/AppConfig.php';
 require_once __DIR__ . '/../../core/DB.php';
 
-use core\AppConfig;
-use core\DB;
+use vendor\layttle\config\AppConfig;
+use vendor\layttle\core\DB;
 
 $config = AppConfig::get();
 $db = new DB($config->dbHost, $config->dbName, $config->dbLogin, $config->dbPassword);

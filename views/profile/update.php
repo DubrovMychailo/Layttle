@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/../../controllers/ProfileController.php';
 
-use controllers\ProfileController;
+use vendor\layttle\controllers\ProfileController;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $controller = new ProfileController();

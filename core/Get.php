@@ -4,7 +4,7 @@ namespace core;
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-use core\RequestMethod;
+use vendor\layttle\core\RequestMethod;
 
 class Get
 {

@@ -1,6 +1,6 @@
 <?php
 
-use core\AppConfig;
+use vendor\layttle\config\AppConfig;
 
 require_once '../config/AppConfig.php';
 require_once '../core/DB.php';

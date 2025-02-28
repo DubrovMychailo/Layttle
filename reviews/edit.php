@@ -3,7 +3,7 @@ require_once __DIR__ . '/../config/AppConfig.php';
 require_once __DIR__ . '/../core/Session.php';
 require_once __DIR__ . '/../core/DB.php';
 
-$session = new \core\Session();
+$session = new \vendor\layttle\core\Session();
 $currentUser = $session->get('user');
 if (!$currentUser) {
     header('Location: /users/login.php');
@@ -12,7 +12,7 @@ if (!$currentUser) {
 
 $review_id = $_GET['review_id'];
 
-$config = \core\AppConfig::get();
+$config = \vendor\layttle\config\AppConfig::get();
 $db = new \mysqli($config->dbHost, $config->dbLogin, $config->dbPassword, $config->dbName);
 
 if ($db->connect_error) {

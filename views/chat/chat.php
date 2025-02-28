@@ -118,20 +118,20 @@ $messages = getMessages($pdo, $userId, $receiverId);
             </div>
         <?php endforeach; ?>
     </div>
-<div>
-    <form id="chat-form" enctype="multipart/form-data">
-        <label for="media" class="file-label">
-            <i class="fas fa-paperclip"></i>
-        </label>
-        <input type="file" name="media" id="media">
+    <div>
+        <form id="chat-form" enctype="multipart/form-data">
+            <label for="media" class="file-label">
+                <i class="fas fa-paperclip"></i>
+            </label>
+            <input type="file" name="media" id="media">
 
-        <input type="text" name="message" id="message" placeholder="Напишіть повідомлення...">
+            <input type="text" name="message" id="message" placeholder="Напишіть повідомлення...">
 
-        <button type="submit">
-            <i class="fas fa-paper-plane"></i>
-        </button>
-    </form>
-</div>
+            <button type="submit">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
 </body>
 <?php require_once __DIR__ . '/../../views/layouts/footer.php'; ?>
 </html>

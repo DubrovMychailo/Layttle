@@ -4,7 +4,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 require_once '../../core/DB.php';
 
-use core\DB;
+use vendor\layttle\core\DB;
 
 $host = 'localhost';
 $dbname = 'Layttle';

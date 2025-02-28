@@ -34,7 +34,7 @@ if (!isset($_SESSION['user']) || !is_array($_SESSION['user'])) {
     }
 }
 
-$config = \core\AppConfig::get();
+$config = \vendor\layttle\config\AppConfig::get();
 $db = new \mysqli($config->dbHost, $config->dbLogin, $config->dbPassword, $config->dbName);
 
 if ($db->connect_error) {

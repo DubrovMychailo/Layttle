@@ -6,8 +6,8 @@ require_once __DIR__ . '/../../config/AppConfig.php';
 require_once __DIR__ . '/../../core/DB.php';
 require_once __DIR__ . '/../../views/layouts/header.php';
 
-use core\AppConfig;
-use core\DB;
+use vendor\layttle\config\AppConfig;
+use vendor\layttle\core\DB;
 
 $config = AppConfig::get();
 $db = new DB($config->dbHost, $config->dbName, $config->dbLogin, $config->dbPassword);

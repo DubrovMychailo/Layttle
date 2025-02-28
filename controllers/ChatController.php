@@ -10,8 +10,19 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+/**
+ * Клас ChatController відповідає за обробку запитів чату.
+ *
+ * @package App\Controllers
+ */
 class ChatController extends Controller
 {
+    /**
+     * Обробляє запит на отримання повідомлень чату.
+     *
+     * @param int $chatId Ідентифікатор чату.
+     * @return array Масив повідомлень.
+     */
     private DB $db;
     private Session $session;
 

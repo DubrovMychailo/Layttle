@@ -3,6 +3,7 @@
 namespace core;
 
 use controllers\ProfileController;
+use controllers\ProfileEditController;
 use controllers\UsersController;
 
 ini_set('display_errors', 1);
@@ -166,7 +167,7 @@ $router->addRoute('cart/add', 'Cart@add');
 $router->addRoute('cart/remove', 'Cart@remove');
 $router->addRoute('profile/edit', 'ProfileEditController@edit');
 $router->addRoute('profile/me', 'ProfileController@view');
-$router->addRoute('profile/update', 'Profile@updateProfile');
+$router->addRoute('profile/update', 'Profile@actionUpdate');
 $router->addRoute('profile', 'ProfileController@view');
 $router->addRoute('profile/{username}', 'ProfileController@view');
 $router->addRoute('chat', 'ChatController@index');
@@ -174,5 +175,4 @@ $router->addRoute('chat/chat/{id}', 'ChatController@show');
 $router->addRoute('chat/show/{id}', 'ChatController@show');
 $router->addRoute('chat/store/{id}', 'ChatController@store');
 $router->addRoute('chat/messages/{id}', 'ChatController@messages');
-$router->addRoute('privacy-policy', 'PrivacyPolicyController@view');
 $router->run();

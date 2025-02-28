@@ -78,6 +78,7 @@ class ProfileController extends Controller
 
     public function validateAndUpdateProfile(array $postData, array $fileData)
     {
+        session_start();
         if (!isset($_SESSION['user'])) {
             return ['success' => false, 'message' => 'Користувач не авторизований.'];
         }
@@ -85,19 +86,16 @@ class ProfileController extends Controller
         $userId = $_SESSION['user']['id'];
         $firstname = trim($postData['firstname'] ?? '');
         $lastname = trim($postData['lastname'] ?? '');
-        $email = trim($postData['email'] ?? '');
-        $phone = trim($postData['phone'] ?? '');
+        $bio = trim($postData['bio'] ?? '');
         $address = trim($postData['address'] ?? '');
+        $phone = trim($postData['phone'] ?? '');
         $city = trim($postData['city'] ?? '');
         $country = trim($postData['country'] ?? '');
         $errors = [];
 
         // Валідація
         if (!$firstname || !$lastname) {
-            $errors[] = 'Імя та прізвище обовязкові!';
-    }
-        if ($email && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $errors[] = 'Некоректна електронна пошта.';
+            $errors[] = 'Ім\'я та прізвище обов\'язкові!';
         }
         if ($phone && !preg_match('/^\+?[0-9]{7,15}$/', $phone)) {
             $errors[] = 'Некоректний номер телефону.';
@@ -110,10 +108,6 @@ class ProfileController extends Controller
             $filename = 'user_' . $userId . '_' . time() . '.' . pathinfo($fileData['photo']['name'], PATHINFO_EXTENSION);
             $photoPath = '/uploads/' . $filename;
 
-            if (!file_exists($uploadDir)) {
-                mkdir($uploadDir, 0777, true);
-            }
-
             if (!move_uploaded_file($fileData['photo']['tmp_name'], $uploadDir . $filename)) {
                 $errors[] = 'Помилка завантаження фото.';
             }
@@ -124,8 +118,8 @@ class ProfileController extends Controller
         }
 
         // Оновлення БД
-        $query = "UPDATE users SET firstname=?, lastname=?, email=?, phone=?, address=?, city=?, country=?";
-        $params = [$firstname, $lastname, $email, $phone, $address, $city, $country];
+        $query = "UPDATE users SET firstname=?, lastname=?, bio=?, address=?, phone=?, city=?, country=?";
+        $params = [$firstname, $lastname, $bio, $address, $phone, $city, $country];
 
         if ($photoPath) {
             $query .= ", photo=?";
@@ -142,9 +136,9 @@ class ProfileController extends Controller
             $_SESSION['user'] = array_merge($_SESSION['user'], [
                 'firstname' => $firstname,
                 'lastname' => $lastname,
-                'email' => $email,
-                'phone' => $phone,
+                'bio' => $bio,
                 'address' => $address,
+                'phone' => $phone,
                 'city' => $city,
                 'country' => $country
             ]);
@@ -157,25 +151,5 @@ class ProfileController extends Controller
         }
 
         return ['success' => false, 'message' => 'Помилка оновлення профілю.'];
-    }
-
-    /**
-     * @throws \Exception
-     */
-    public function updateProfile()
-    {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $response = $this->validateAndUpdateProfile($_POST, $_FILES);
-
-            if ($response['success']) {
-                header("Location: /profile/me");
-                exit;
-            } else {
-                $this->render('profile/edit', ['response' => $response, 'userData' => $_SESSION['user']]);
-            }
-        } else {
-            header("Location: /profile/me");
-            exit;
-        }
     }
 }

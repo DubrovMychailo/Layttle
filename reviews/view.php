@@ -3,7 +3,7 @@ require_once __DIR__ . '/../config/AppConfig.php';
 require_once __DIR__ . '/../core/DB.php';
 require_once __DIR__ . '/../core/Session.php';
 
-$config = \core\AppConfig::get();
+$config = \vendor\layttle\config\AppConfig::get();
 
 $db = new \mysqli($config->dbHost, $config->dbLogin, $config->dbPassword, $config->dbName);
 
@@ -13,7 +13,7 @@ if ($db->connect_error) {
 
 $product_id = $_GET['product_id'];
 
-$session = new \core\Session();
+$session = new \vendor\layttle\core\Session();
 $currentUser = $session->get('user');
 
 $stmt = $db->prepare("SELECT r.*, u.firstname, u.lastname FROM reviews r JOIN users u ON r.user_id = u.id WHERE r.product_id = ?");

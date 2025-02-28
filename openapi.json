@@ -1,0 +1,113 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Layttle API",
+    "version": "1.0.0",
+    "description": "Документація API для чату"
+  },
+  "paths": {
+    "/api/messages": {
+      "get": {
+        "summary": "Отримати всі повідомлення",
+        "description": "Повертає список всіх повідомлень.",
+        "responses": {
+          "200": {
+            "description": "Список повідомлень",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "example": 1
+                      },
+                      "text": {
+                        "type": "string",
+                        "example": "Привіт"
+                      },
+                      "sender_id": {
+                        "type": "integer",
+                        "example": 10
+                      },
+                      "recipient_id": {
+                        "type": "integer",
+                        "example": 16
+                      },
+                      "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "example": "2025-02-27T12:34:56Z"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Надіслати повідомлення",
+        "description": "Надсилає нове повідомлення користувачу.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "example": "Привіт"
+                  },
+                  "recipient_id": {
+                    "type": "integer",
+                    "example": 16
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Повідомлення надіслано",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "integer",
+                      "example": 2
+                    },
+                    "text": {
+                      "type": "string",
+                      "example": "Привіт"
+                    },
+                    "sender_id": {
+                      "type": "integer",
+                      "example": 10
+                    },
+                    "recipient_id": {
+                      "type": "integer",
+                      "example": 16
+                    },
+                    "created_at": {
+                      "type": "string",
+                      "format": "date-time",
+                      "example": "2025-02-27T12:34:56Z"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

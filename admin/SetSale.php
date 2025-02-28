@@ -2,7 +2,7 @@
 require_once '../config/AppConfig.php';
 require_once '../core/DB.php';
 
-$config = \core\AppConfig::get();
+$config = \vendor\layttle\config\AppConfig::get();
 $db = new mysqli($config->dbHost, $config->dbLogin, $config->dbPassword, $config->dbName);
 $result = $db->query("SELECT id, name, price FROM products");
 ?>
